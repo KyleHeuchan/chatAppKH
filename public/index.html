@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Socket IO with ChatApp</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<section class="sideBar">
+		<div class="channel">
+			<div class="channelImage"></div>
+			<div class="channelName"></div>
+		</div>
+		<div class="channel">
+			<div class="channelImage"></div>
+			<div class="channelName"></div>
+		</div>
+		<div class="channel">
+			<div class="channelImage"></div>
+			<div class="channelName"></div>
+		</div>
+		<div class="channel">
+			<div class="channelImage"></div>
+			<div class="channelName"></div>
+		</div>
+	</section>
+	<section id="wrapper">
+		<div id="nickInWrap">
+			<input type="text" class="nickname" placeholder="Insert Nickname">
+		</div>
+		<ul id="messages"></ul>
+		<form>
+			<input class="message" type="text" id="m" autocomplete="off">
+			<button>send</button>
+	</form>
+	</section>
+	<section class="sideBar">
+		<div class="optionsCon">
+			<div id="options">
+				<div class="opt"></div>
+				<div class="opt"></div>
+				<div class="opt"></div>
+			</div>
+		</div>
+		<div class="optionsCon">
+			<div id="numberHolder">
+				<p>Active Users:  <span id="numberOfUsers">0</span></p>
+			</div>
+		</div>
+	</section>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
